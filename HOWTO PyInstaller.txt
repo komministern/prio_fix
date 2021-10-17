@@ -1,0 +1,11 @@
+
+Run this command from within the project catalouge (that is the same directory as the start.py file):
+
+    pyi-makespec --windowed --add-binary ./resources/"Mall Användarregistrering-1.98.xlsx";resources --add-binary ./resources/uffe2.png;resources --add-binary ./resources/uffe2square.ico;resources --icon=./resources/uffe2square.ico --name="PRIO-fix Användarregistrering" --onefile start.py
+
+This will create a .spec file which pyinstaller must have in the following step. Now type:
+
+    pyinstaller "PRIO-fix Användarregistrering.spec"
+
+And voila, after some processing the executable should now appear in the following 
+folder: pyside2_example_project/dist
